@@ -61,9 +61,10 @@ button,input,select,textarea{font:inherit}
 .hero{
   position:relative;overflow:hidden;
   background:
-    radial-gradient(circle at 85% 25%, rgba(255,209,30,.2), transparent 34%),
-    radial-gradient(circle at 10% 10%, rgba(255,255,255,.08), transparent 28%),
-    linear-gradient(135deg, #22252b 0%, #2f333b 100%);
+    linear-gradient(135deg, rgba(34,37,43,.82), rgba(47,51,59,.74)),
+    radial-gradient(circle at 85% 25%, rgba(255,209,30,.22), transparent 34%),
+    radial-gradient(circle at 10% 10%, rgba(255,255,255,.10), transparent 28%),
+    url("background.jpg") center center / cover no-repeat;
 }
 .hero:before{content:"";position:absolute;inset:auto -12% -35% -12%;height:380px;background:rgba(255,209,30,.08);filter:blur(60px);transform:rotate(-4deg)}
 .hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}
