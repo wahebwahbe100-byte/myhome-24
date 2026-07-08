@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MyHome24: Entrümpelung, Haushaltsauflösung und haushaltsnahe Dienstleistungen – zuverlässig, fair und diskret.">
+  <title>MyHome24 | Entrümpelung, Haushaltsauflösung & Alltagshilfe</title>
+  <link rel="preload" href="logo.png" as="image">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJNeUhvbWUyNCBGYXZpY29uIj4KICA8cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjMjUyODJFIi8+CiAgPHBhdGggZD0iTTIyIDYxTDY0IDI2TDEwNiA2MUw5NCA3NFYxMDRIMzRWNzRMMjIgNjFaIiBmaWxsPSIjRkZEMTFFIi8+CiAgPHBhdGggZD0iTTIyIDYxTDY0IDI2TDEwNiA2MSIgc3Ryb2tlPSIjMjUyODJFIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0zOSA2OEw2NCA0OEw4OSA2OCIgc3Ryb2tlPSIjMjUyODJFIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQzIDQ4KSByb3RhdGUoLTM1IDIyIDMwKSI+CiAgICA8cmVjdCB4PSIxOCIgeT0iOCIgd2lkdGg9IjgiIGhlaWdodD0iNTUiIHJ4PSIzIiBmaWxsPSIjMjUyODJFIi8+CiAgICA8cmVjdCB4PSIxMiIgeT0iOCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjgiIHJ4PSIzIiBmaWxsPSIjRjVGN0ZBIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjY0IiB5PSIxMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGRkQxMUUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjaywgSW1wYWN0LCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIj4yNDwvdGV4dD4KPC9zdmc+Cg==" type="image/svg+xml">
+  <style>
+:root{
+  --bg:#22252b;
+  --bg-2:#2b2f37;
+  --surface:#30343d;
+  --surface-2:#ffffff;
+  --text:#f7f7f2;
+  --muted:#cfd2d8;
+  --dark:#17191d;
+  --gold:#ffd11e;
+  --gold-2:#f6b800;
+  --line:rgba(255,255,255,.12);
+  --shadow:0 24px 70px rgba(0,0,0,.28);
+  --radius:24px;
+  --container:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit}
+.container{width:min(var(--container), calc(100% - 40px));margin-inline:auto}
+.section-padding{padding:96px 0}
+.skip-link{position:absolute;left:-999px;top:16px;background:var(--gold);color:var(--dark);padding:10px 14px;border-radius:10px;z-index:999}
+.skip-link:focus{left:16px}
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(34,37,43,.82);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{height:118px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand img{height:102px;width:auto;max-height:none;object-fit:contain}
+.brand-copy{display:flex;flex-direction:column;justify-content:center;line-height:1.08;white-space:nowrap}
+.brand-title{color:var(--gold);font-weight:1000;font-size:clamp(16px, 1.5vw, 23px);letter-spacing:-.018em;text-shadow:0 2px 0 rgba(0,0,0,.26)}
+.brand-subtitle{margin-top:3px;color:#fff;font-size:6.5px;font-weight:950;letter-spacing:.12em;text-transform:uppercase}
+.site-nav{display:flex;align-items:center;gap:8px}
+.site-nav a{padding:10px 14px;border-radius:999px;color:var(--muted);font-weight:700;font-size:15px;transition:.2s ease}
+.site-nav a:hover,.site-nav a:focus{color:var(--text);background:rgba(255,255,255,.08)}
+.site-nav .nav-cta{background:var(--gold);color:var(--dark);box-shadow:0 10px 30px rgba(255,209,30,.22)}
+.site-nav .nav-cta:hover{background:#ffe05d;color:var(--dark)}
+.menu-toggle{display:none;width:46px;height:46px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.04);color:var(--text);padding:10px;cursor:pointer}
+.menu-toggle span{display:block;height:2px;background:var(--text);margin:6px 0;border-radius:999px}
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 85% 25%, rgba(255,209,30,.2), transparent 34%),
+    radial-gradient(circle at 10% 10%, rgba(255,255,255,.08), transparent 28%),
+    linear-gradient(135deg, #22252b 0%, #2f333b 100%);
+}
+.hero:before{content:"";position:absolute;inset:auto -12% -35% -12%;height:380px;background:rgba(255,209,30,.08);filter:blur(60px);transform:rotate(-4deg)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}
+.eyebrow{margin:0 0 14px;color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:.15em;font-size:13px}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(42px, 6vw, 78px);line-height:1.02;letter-spacing:-.055em;margin-bottom:22px}
+h2{font-size:clamp(30px, 4vw, 52px);line-height:1.08;letter-spacing:-.04em;margin-bottom:18px}
+h3{font-size:22px;line-height:1.2;margin-bottom:10px}
+.hero-text{font-size:20px;color:var(--muted);max-width:690px;margin-bottom:28px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:13px 22px;border:0;border-radius:999px;font-weight:900;cursor:pointer;transition:.2s ease;text-align:center}
+.btn-primary{background:var(--gold);color:var(--dark);box-shadow:0 16px 40px rgba(255,209,30,.22)}
+.btn-primary:hover{background:#ffe167;transform:translateY(-2px)}
+.btn-secondary{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--text)}
+.btn-secondary:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.btn-dark{background:var(--dark);color:var(--gold)}
+.btn-dark:hover{transform:translateY(-2px);background:#08090b}
+.trust-row{display:flex;gap:12px;flex-wrap:wrap}
+.trust-row span{border:1px solid rgba(255,209,30,.24);background:rgba(255,209,30,.08);color:#fff4b7;border-radius:999px;padding:8px 13px;font-weight:800;font-size:14px}
+.hero-card{position:relative;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,.1), rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.16);border-radius:34px;padding:34px;box-shadow:var(--shadow)}
+.card-glow{position:absolute;inset:-90px -90px auto auto;width:240px;height:240px;border-radius:50%;background:rgba(255,209,30,.26);filter:blur(40px)}
+.hero-logo{position:relative;width:100%;max-width:560px;margin:0 auto 24px}
+.check-list{position:relative;list-style:none;padding:0;margin:0 0 22px;display:grid;gap:13px}
+.check-list li{position:relative;padding-left:34px;color:var(--muted)}
+.check-list li:before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--gold);color:var(--dark);display:grid;place-items:center;font-weight:900;line-height:1}
+.mini-link{color:var(--gold);font-weight:900}
+.section-head{max-width:780px;margin-bottom:40px}
+.section-head p:not(.eyebrow){color:var(--muted);font-size:18px}
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.035));border:1px solid var(--line);border-radius:var(--radius);padding:28px;min-height:265px;transition:.25s ease}
+.service-card:hover{transform:translateY(-6px);border-color:rgba(255,209,30,.35);box-shadow:0 20px 60px rgba(0,0,0,.18)}
+.service-card p{color:var(--muted);margin-bottom:0}
+.service-thumb{width:66px;height:66px;display:grid;place-items:center;border-radius:22px;background:rgba(255,209,30,.12);border:1px solid rgba(255,209,30,.16);overflow:hidden;margin-bottom:24px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+.service-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.icon{width:66px;height:66px;display:grid;place-items:center;border-radius:22px;background:rgba(255,209,30,.12);color:var(--gold);font-weight:1000;margin-bottom:24px;font-size:24px}
+.about{background:linear-gradient(180deg, #252932, #202329)}
+.split-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;align-items:stretch}
+.about-panel{position:relative;background:var(--gold);color:var(--dark);border-radius:34px;padding:40px;box-shadow:var(--shadow);overflow:hidden}
+.about-panel:after{content:"";position:absolute;right:-70px;bottom:-70px;width:220px;height:220px;border-radius:50%;background:rgba(0,0,0,.1)}
+.about-panel h2{font-size:clamp(28px, 3vw, 42px)}
+.about-panel p{font-weight:650}
+.quote-mark{font-size:100px;line-height:.75;margin:0 0 10px;font-family:Georgia, serif;opacity:.35}
+.about-copy{background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:34px;padding:40px}
+.about-copy p{color:var(--muted)}
+.signature-box{margin-top:28px;border-left:5px solid var(--gold);background:rgba(255,255,255,.06);padding:18px 20px;border-radius:0 18px 18px 0}
+.signature-box strong{display:block;font-size:24px;color:var(--gold);margin-bottom:2px}
+.signature-box span{color:var(--muted)}
+.benefits{background:#f7f7f2;color:var(--dark)}
+.benefits .eyebrow{color:#b88700}
+.benefits .section-head p{color:#62666d}
+.benefit-list{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.benefit-item{background:#fff;border:1px solid rgba(23,25,29,.08);border-radius:var(--radius);padding:24px;box-shadow:0 15px 42px rgba(23,25,29,.07)}
+.benefit-item span{display:inline-flex;margin-bottom:22px;width:44px;height:44px;border-radius:15px;background:var(--dark);color:var(--gold);align-items:center;justify-content:center;font-weight:1000}
+.benefit-item p{color:#62666d;margin-bottom:0}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}
+.process-step{position:relative;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:var(--radius);padding:28px;min-height:250px}
+.process-step span{display:inline-flex;width:48px;height:48px;border-radius:50%;background:var(--gold);color:var(--dark);align-items:center;justify-content:center;font-weight:1000;margin-bottom:22px}
+.process-step p{color:var(--muted);margin-bottom:0}
+.cta-band{padding:56px 0;background:linear-gradient(135deg, var(--gold), var(--gold-2));color:var(--dark)}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.cta-inner h2{margin-bottom:8px}
+.cta-inner p{margin-bottom:0;max-width:700px;font-weight:650}.cta-inner .eyebrow{color:#735900}
+.faq-list{display:grid;gap:14px;max-width:880px}
+details{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:18px;padding:18px 22px}
+summary{cursor:pointer;font-weight:900;color:var(--text)}
+details p{color:var(--muted);margin:14px 0 0}
+.contact{background:linear-gradient(180deg, #202329, #17191d)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}
+.contact-copy p{color:var(--muted);font-size:18px}
+.contact-cards{display:grid;gap:14px;margin-top:28px}
+.contact-card{display:block;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:18px;padding:18px 20px;transition:.2s ease}
+.contact-card:hover{border-color:rgba(255,209,30,.35);transform:translateY(-2px)}
+.contact-card strong{display:block;color:var(--gold)}
+.contact-card span{color:var(--muted)}
+.contact-form{background:#fff;color:var(--dark);border-radius:34px;padding:34px;box-shadow:var(--shadow);display:grid;gap:17px}
+.contact-form label{display:grid;gap:7px;font-weight:900}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid #dde0e5;background:#f7f8fa;border-radius:14px;padding:13px 14px;color:var(--dark);outline:none}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--gold-2);box-shadow:0 0 0 4px rgba(255,209,30,.18);background:#fff}
+.contact-form textarea{resize:vertical}.form-note{margin:0;color:#656a72;font-size:14px}
+.site-footer{background:#111317;color:var(--muted);padding:54px 0 22px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-grid{display:grid;grid-template-columns:1.4fr .7fr .7fr;gap:34px;margin-bottom:32px}.footer-logo{width:360px;max-width:100%;margin-bottom:18px}.site-footer h3{color:#fff;font-size:18px}.site-footer a{display:block;margin:8px 0;color:var(--muted)}.site-footer a:hover{color:var(--gold)}.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:18px}.footer-bottom a{color:var(--gold)}
+.legal-page{background:#f7f7f2;color:var(--dark)}
+.legal-page .site-header{background:rgba(34,37,43,.92)}
+.legal-wrap{padding:80px 0;max-width:920px}.legal-wrap h1{font-size:48px}.legal-card{background:#fff;border-radius:24px;padding:32px;border:1px solid rgba(23,25,29,.1);box-shadow:0 20px 60px rgba(23,25,29,.06);margin:20px 0}.legal-card p,.legal-card li{color:#555b64}.placeholder{background:#fff2b3;border:1px dashed #c49300;border-radius:12px;padding:14px;color:#5b4600;font-weight:800}
+.reveal{opacity:1;transform:none;transition:opacity .6s ease, transform .6s ease}.reveal.is-visible{opacity:1;transform:none}
+@media (max-width: 980px){
+  .hero-grid,.split-grid,.contact-grid{grid-template-columns:1fr}
+  .cards-grid{grid-template-columns:repeat(2,1fr)}
+  .benefit-list{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+  .brand img{height:92px;width:auto;max-height:none}
+  .brand-title{font-size:20px;letter-spacing:-.015em}
+  .brand-subtitle{font-size:6px;letter-spacing:.11em}
+}
+@media (max-width: 760px){
+  .container{width:min(100% - 28px, var(--container))}.section-padding{padding:72px 0}.header-inner{height:96px}.menu-toggle{display:block}.site-nav{position:absolute;top:96px;left:14px;right:14px;display:none;flex-direction:column;align-items:stretch;background:#17191d;border:1px solid var(--line);border-radius:22px;padding:12px;box-shadow:var(--shadow)}.site-nav.is-open{display:flex}.site-nav a{padding:13px 15px}.brand{gap:8px}.brand img{height:76px;width:auto;max-height:none}.brand-title{font-size:15px;letter-spacing:-.01em}.brand-subtitle{font-size:5.5px;letter-spacing:.09em;margin-top:2px}.hero-card,.about-panel,.about-copy,.contact-form{padding:24px;border-radius:24px}.cards-grid,.benefit-list,.process-grid,.footer-grid{grid-template-columns:1fr}.cta-inner{align-items:flex-start;flex-direction:column}.footer-bottom{align-items:flex-start;flex-direction:column}h1{font-size:42px}.hero-text{font-size:18px}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.reveal{transition:none;opacity:1;transform:none}.btn:hover,.service-card:hover,.contact-card:hover{transform:none}}
+
+
+/* Ein-Datei-Version: Rechtliches direkt in index.html */
+.legal-inline{background:#f7f7f2;color:var(--dark)}
+.legal-inline .section-head p:not(.eyebrow){color:#62666d}
+.legal-inline-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.legal-inline .legal-card{background:#fff;border-radius:24px;padding:26px;border:1px solid rgba(23,25,29,.1);box-shadow:0 20px 60px rgba(23,25,29,.06);margin:0}
+.legal-inline .legal-card p,.legal-inline .legal-card li{color:#555b64}
+.legal-inline .placeholder{background:#fff2b3;border:1px dashed #c49300;border-radius:12px;padding:14px;color:#5b4600;font-weight:800;margin-bottom:16px}
+@media (max-width: 980px){.legal-inline-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="MyHome24 Startseite">
+        <img src="logo.png" alt="MyHome24 Logo">
+        <span class="brand-copy" aria-hidden="true">
+          <span class="brand-title">MyHome24</span>
+          <span class="brand-subtitle">ENTRÜMPELUNG · HAUSHALT ·</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueber">Über uns</a>
+        <a href="#vorteile">Vorteile</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt" class="nav-cta">Anfragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-padding">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Zuverlässig. Diskret. Fair.</p>
+          <h1>Entrümpelung, Haushaltsauflösung & praktische Hilfe im Alltag.</h1>
+          <p class="hero-text">MyHome24 entlastet Sie dort, wo Arbeit, Zeitdruck oder sensible Situationen zusammenkommen – mit persönlichem Einsatz, ehrlicher Arbeit und einem Ergebnis, das überzeugt.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontakt">Kostenlos anfragen</a>
+            <a class="btn btn-secondary" href="#leistungen">Leistungen ansehen</a>
+          </div>
+          <div class="trust-row" aria-label="Leistungsversprechen">
+            <span>Pünktlich</span>
+            <span>Sauber</span>
+            <span>Transparent</span>
+          </div>
+        </div>
+        <div class="hero-card reveal" aria-label="MyHome24 Leistungsübersicht">
+          <div class="card-glow"></div>
+          <img class="hero-logo" src="logo.png" alt="MyHome24 Logo">
+          <ul class="check-list">
+            <li>Entrümpelungen von Keller, Wohnung, Garage & Dachboden</li>
+            <li>Haushaltsauflösungen mit Respekt und Sorgfalt</li>
+            <li>Haushaltsnahe Hilfe und praktische Unterstützung</li>
+          </ul>
+          <a class="mini-link" href="#kontakt">Jetzt Terminwunsch senden →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding services" id="leistungen">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Leistungen</p>
+          <h2>Alles aus einer Hand – unkompliziert und effizient.</h2>
+          <p>Ob einmalige Unterstützung oder kompletter Auftrag: MyHome24 findet eine pragmatische Lösung, die zu Ihrer Situation passt.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="service-card reveal">
+            <span class="service-thumb" aria-hidden="true"><img src="gifs/entruempelung.gif" alt=""></span>
+            <h3>Entrümpelung</h3>
+            <p>Wohnungen, Keller, Dachböden, Garagen und Nebenräume werden sorgfältig geräumt und besenrein übergeben.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-thumb" aria-hidden="true"><img src="gifs/haushaltsaufloesung.gif" alt=""></span>
+            <h3>Haushaltsauflösung</h3>
+            <p>Diskrete Unterstützung in sensiblen Situationen – respektvoll im Umgang mit Menschen, Erinnerungen und Eigentum.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-thumb" aria-hidden="true"><img src="gifs/haushaltsnahe-dienste.gif" alt=""></span>
+            <h3>Haushaltsnahe Dienste</h3>
+            <p>Praktische Hilfe im Alltag, kleine Arbeiten und Unterstützung, wenn schnell eine verlässliche Hand gebraucht wird.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-thumb" aria-hidden="true"><img src="gifs/transport-tragen.gif" alt=""></span>
+            <h3>Transport & Tragen</h3>
+            <p>Hilfe beim Tragen, Sortieren, Umstellen und Transportieren kleinerer Gegenstände im privaten Umfeld.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-thumb" aria-hidden="true"><img src="gifs/saubere-uebergabe.gif" alt=""></span>
+            <h3>Saubere Übergabe</h3>
+            <p>Nach Abschluss wird ordentlich gearbeitet und der Bereich so hinterlassen, dass Sie direkt weiterplanen können.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-thumb" aria-hidden="true"><img src="gifs/flexible-termine.gif" alt=""></span>
+            <h3>Flexible Termine</h3>
+            <p>Kurzfristige Termine und individuelle Lösungen – besonders dann, wenn es schnell gehen muss.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding about" id="ueber">
+      <div class="container split-grid">
+        <div class="about-panel reveal">
+          <p class="quote-mark">„</p>
+          <h2>Mein Name steht für persönlichen Einsatz, Verlässlichkeit und ehrliche Arbeit.</h2>
+          <p>Mit MyHome24 habe ich ein Kleingewerbe gegründet, um Menschen im Alltag zu entlasten – ganz gleich, ob es um eine Entrümpelung, eine Haushaltsauflösung oder praktische Unterstützung im Haushalt geht.</p>
+          <p>Ich arbeite lösungsorientiert, diskret und gewissenhaft. Jeder Auftrag ist individuell, denn kein Haushalt und keine Situation ist gleich.</p>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">Über MyHome24</p>
+          <h2>Menschlich, nahbar und mit Sorgfalt bei jedem Auftrag.</h2>
+          <p>Besonders wichtig ist ein respektvoller Umgang mit Menschen und Eigentum – gerade bei sensiblen Themen wie Haushaltsauflösungen oder Entrümpelungen.</p>
+          <p>Das Ziel ist einfach: Ihnen Arbeit abnehmen, Stress reduzieren und am Ende ein Ergebnis liefern, mit dem Sie wirklich zufrieden sind.</p>
+          <div class="signature-box">
+            <strong>Geht nicht? Gibt’s nicht.</strong>
+            <span>Gemeinsam finden wir eine Lösung.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding benefits" id="vorteile">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Warum MyHome24?</p>
+          <h2>Die richtige Wahl, wenn es zuverlässig und persönlich sein soll.</h2>
+        </div>
+        <div class="benefit-list">
+          <div class="benefit-item reveal">
+            <span>01</span>
+            <div>
+              <h3>Zuverlässigkeit</h3>
+              <p>Absprachen werden eingehalten – pünktlich, verbindlich und transparent.</p>
+            </div>
+          </div>
+          <div class="benefit-item reveal">
+            <span>02</span>
+            <div>
+              <h3>Flexibilität</h3>
+              <p>Kurzfristige Termine, individuelle Lösungen und pragmatisches Vorgehen.</p>
+            </div>
+          </div>
+          <div class="benefit-item reveal">
+            <span>03</span>
+            <div>
+              <h3>Alles aus einer Hand</h3>
+              <p>Von der Entrümpelung bis zu haushaltsnahen Dienstleistungen – unkompliziert und effizient.</p>
+            </div>
+          </div>
+          <div class="benefit-item reveal">
+            <span>04</span>
+            <div>
+              <h3>Faire & ehrliche Arbeit</h3>
+              <p>Klare Kommunikation, saubere Ausführung und kein unnötiger Aufwand.</p>
+            </div>
+          </div>
+          <div class="benefit-item reveal">
+            <span>05</span>
+            <div>
+              <h3>Menschlich & nahbar</h3>
+              <p>Für jedes Anliegen wird sich Zeit genommen – mit der nötigen Sorgfalt und Ruhe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding process" id="ablauf">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ablauf</p>
+          <h2>So einfach läuft Ihre Anfrage ab.</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <span>1</span>
+            <h3>Anfrage senden</h3>
+            <p>Beschreiben Sie kurz, wobei Sie Unterstützung brauchen und wann es passen würde.</p>
+          </div>
+          <div class="process-step reveal">
+            <span>2</span>
+            <h3>Besprechen</h3>
+            <p>Wir klären Umfang, Termin, Besonderheiten und mögliche Entsorgung oder Übergabe.</p>
+          </div>
+          <div class="process-step reveal">
+            <span>3</span>
+            <h3>Faires Angebot</h3>
+            <p>Sie erhalten eine klare Einschätzung ohne unnötigen Aufwand oder versteckte Überraschungen.</p>
+          </div>
+          <div class="process-step reveal">
+            <span>4</span>
+            <h3>Saubere Umsetzung</h3>
+            <p>Der Auftrag wird zuverlässig erledigt – diskret, ordentlich und lösungsorientiert.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding cta-band">
+      <div class="container cta-inner reveal">
+        <div>
+          <p class="eyebrow">Schnell & unkompliziert</p>
+          <h2>Sprechen Sie MyHome24 einfach an.</h2>
+          <p>Gemeinsam finden wir eine Lösung – auch, wenn es kurzfristig oder besonders individuell ist.</p>
+        </div>
+        <a class="btn btn-dark" href="#kontakt">Kontakt aufnehmen</a>
+      </div>
+    </section>
+
+    <section class="section-padding faq" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Häufige Fragen</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>Kann ich kurzfristig einen Termin bekommen?</summary>
+            <p>Ja, kurzfristige Termine sind je nach Auslastung möglich. Senden Sie am besten direkt Ihren Wunschtermin mit.</p>
+          </details>
+          <details>
+            <summary>Wie wird der Preis berechnet?</summary>
+            <p>Der Preis hängt von Umfang, Aufwand, Zugänglichkeit, Termin und eventuellen Zusatzleistungen ab. Nach kurzer Abstimmung erhalten Sie eine faire Einschätzung.</p>
+          </details>
+          <details>
+            <summary>Arbeiten Sie auch bei sensiblen Haushaltsauflösungen?</summary>
+            <p>Ja. Diskretion, Sorgfalt und respektvoller Umgang mit Eigentum sind besonders wichtig.</p>
+          </details>
+          <details>
+            <summary>Welche Bereiche werden entrümpelt?</summary>
+            <p>Zum Beispiel Wohnung, Keller, Dachboden, Garage, Abstellräume und weitere private Bereiche nach Absprache.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding contact" id="kontakt">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Jetzt unverbindlich anfragen.</h2>
+          <p>Schreiben Sie kurz, wobei Sie Hilfe brauchen. MyHome24 meldet sich schnellstmöglich zurück.</p>
+          <div class="contact-cards">
+            <a href="tel:+490000000000" class="contact-card">
+              <strong>Telefon</strong>
+              <span>+49 000 000000</span>
+            </a>
+            <a href="mailto:info@myhome24.de" class="contact-card">
+              <strong>E-Mail</strong>
+              <span>info@myhome24.de</span>
+            </a>
+            <div class="contact-card">
+              <strong>Einsatzgebiet</strong>
+              <span>Stadt / Region eintragen</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Ihr Name" required>
+          </label>
+          <label>
+            Telefon oder E-Mail
+            <input type="text" name="contact" placeholder="Wie darf ich Sie erreichen?" required>
+          </label>
+          <label>
+            Leistung
+            <select name="service" required>
+              <option value="">Bitte auswählen</option>
+              <option>Entrümpelung</option>
+              <option>Haushaltsauflösung</option>
+              <option>Haushaltsnahe Dienstleistung</option>
+              <option>Sonstiges</option>
+            </select>
+          </label>
+          <label>
+            Nachricht
+            <textarea name="message" rows="5" placeholder="Beschreiben Sie kurz Ihr Anliegen" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Anfrage vorbereiten</button>
+          <p class="form-note" id="formNote">Das Formular öffnet Ihr E-Mail-Programm mit einer vorbereiteten Nachricht.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-padding legal-inline" id="impressum">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Rechtliches</p>
+          <h2>Impressum</h2>
+          <p>Bitte ersetzen Sie die Platzhalter vor Veröffentlichung durch Ihre echten Unternehmensdaten.</p>
+        </div>
+        <div class="legal-inline-grid">
+          <section class="legal-card reveal">
+            <div class="placeholder">Platzhalter bitte anpassen.</div>
+            <h3>Angaben zum Anbieter</h3>
+            <p><strong>MyHome24</strong><br>Vorname Nachname<br>Straße Hausnummer<br>PLZ Ort<br>Deutschland</p>
+            <p><strong>Kontakt</strong><br>Telefon: +49 000 000000<br>E-Mail: info@myhome24.de</p>
+            <p><strong>Unternehmensform</strong><br>Kleingewerbe / Einzelunternehmen</p>
+          </section>
+          <section class="legal-card reveal">
+            <h3>Hinweis</h3>
+            <p>Diese Angaben sind eine Vorlage und keine Rechtsberatung. Prüfen Sie Impressum und Datenschutz vor Veröffentlichung sorgfältig und ersetzen Sie alle Platzhalter.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding legal-inline" id="datenschutz">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Rechtliches</p>
+          <h2>Datenschutzerklärung</h2>
+          <p>Bitte vor Veröffentlichung mit Ihren tatsächlichen Tools, Hosting-Anbieter und Kontaktdaten ergänzen.</p>
+        </div>
+        <div class="legal-inline-grid">
+          <section class="legal-card reveal">
+            <div class="placeholder">Platzhalter bitte anpassen.</div>
+            <h3>1. Verantwortlicher</h3>
+            <p>MyHome24, Vorname Nachname, Straße Hausnummer, PLZ Ort, E-Mail: info@myhome24.de</p>
+            <h3>2. Kontaktaufnahme</h3>
+            <p>Wenn Sie per E-Mail, Telefon oder Kontaktformular Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung der Anfrage verwendet.</p>
+            <h3>3. Server-Logfiles</h3>
+            <p>Beim Besuch der Webseite können technische Daten durch den Hosting-Anbieter verarbeitet werden, zum Beispiel IP-Adresse, Zeitpunkt des Zugriffs und aufgerufene Seiten.</p>
+          </section>
+          <section class="legal-card reveal">
+            <h3>4. Cookies und Tracking</h3>
+            <p>Diese Ein-Datei-Webseite nutzt keine externen Tracker und keine externen Schriftarten. Wenn später Analyse-Tools eingebunden werden, muss diese Erklärung angepasst werden.</p>
+            <h3>5. Ihre Rechte</h3>
+            <p>Sie können Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen, soweit die gesetzlichen Voraussetzungen vorliegen.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.png" alt="MyHome24 Logo" class="footer-logo">
+        <p>Entrümpelung, Haushaltsauflösung und praktische Hilfe im Alltag – ehrlich, verlässlich und nahbar.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueber">Über uns</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> MyHome24. Alle Rechte vorbehalten.</span>
+      <a href="#top">Nach oben ↑</a>
+    </div>
+  </footer>
+  <script>
+const menuButton = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.site-nav');
+
+if (menuButton && nav) {
+  menuButton.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    menuButton.setAttribute('aria-expanded', String(open));
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
+
+const reveals = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach((element) => observer.observe(element));
+} else {
+  reveals.forEach((element) => element.classList.add('is-visible'));
+}
+
+const form = document.getElementById('contactForm');
+const formNote = document.getElementById('formNote');
+
+if (form) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const name = data.get('name') || '';
+    const contact = data.get('contact') || '';
+    const service = data.get('service') || '';
+    const message = data.get('message') || '';
+
+    const subject = `Anfrage über die Webseite: ${service}`;
+    const body = [
+      `Name: ${name}`,
+      `Kontakt: ${contact}`,
+      `Leistung: ${service}`,
+      '',
+      'Nachricht:',
+      message
+    ].join('\n');
+
+    window.location.href = `mailto:info@myhome24.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (formNote) {
+      formNote.textContent = 'Ihre E-Mail wurde vorbereitet. Bitte prüfen und absenden.';
+    }
+  });
+}
+
+  </script>
+</body>
+</html>
